@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="score">score: <span class="score--value">00</span></div>
+
+    <div class="menu-screen">
+        <span class="game-over">game over</span>
+        <span class="final-score">score <span>00</span></span>
+
+        <button class="btn-play">
+            <span class="material-symbols-outlined">
+                play_circle
+            </span>
+            
+            Jogar novamente
+        </button>
+    </div>
+
+    <canvas width="600" height="600"></canvas>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .fundo{
+                background-image: linear-gradient(45deg,black, crimson);
+                height: 100vh;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            .calculadora{
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.8);
+                top: 120%;
+                left: 50%;
+                transform: translate(-10%,-70%);
+                border-radius: 15px;
+                padding: 15px;
+            }
+            .botao{
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+                cursor: pointer;
+                margin: 3px;
+                background-color: rgb(31,31,31);
+                border: none;
+                color: #fff;
+            }
+            .botao:hover{
+                background-color: black;
+            }
+            #resultado{
+                background-color: white;
+                width: 207px;
+                height: 30px;
+                margin: 5px;
+                font-size: 25px;
+                color: black;
+                text-align: right;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fundo">
+            <h1></h1>
+            <div class="calculadora">
+                <h1>Calculadora</h1>
+                <p id="resultado"></p>
+                <table>
+                    <tr>
+                        <td><button class="botao" onclick="clean()">C</button></td>
+                        <td><button class="botao" onclick="back()"><</button></td>
+                        <td><button class="botao" onclick="insert('/')">/</button></td>
+                        <td><button class="botao" onclick="insert('*')">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('7')">7</button></td>
+                        <td><button class="botao" onclick="insert('8')">8</button></td>
+                        <td><button class="botao" onclick="insert('9')">9</button></td>
+                        <td><button class="botao" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('4')">4</button></td>
+                        <td><button class="botao" onclick="insert('5')">5</button></td>
+                        <td><button class="botao" onclick="insert('6')">6</button></td>
+                        <td><button class="botao" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('1')">1</button></td>
+                        <td><button class="botao" onclick="insert('2')">2</button></td>
+                        <td><button class="botao" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
+                        <td><button class="botao" onclick="insert('.')">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script>
+            function insert(num)
+            {
+                var numero = document.getElementById('resultado').innerHTML;
+                document.getElementById('resultado').innerHTML = numero + num;
+            }
+            function clean()
+            {
+                document.getElementById('resultado').innerHTML = "";
+            }
+            function back()
+            {
+                var resultado = document.getElementById('resultado').innerHTML;
+                document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+            }
+            function calcular()
+            {
+                var resultado = document.getElementById('resultado').innerHTML;
+                if(resultado)
+                {
+                    document.getElementById('resultado').innerHTML = eval(resultado);
+                }
+                else
+                {
+                    document.getElementById('resultado').innerHTML = "Nada..."
+                }
+            }
+        </script>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://devenvolvente0190.github.io/Gerador-QrCode/style.css" rel="stylesheet" />
+    <script src="https://devenvolvente0190.github.io/Gerador-QrCode/script.js"></script> 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6482348299370206"
+     crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://br-code.picpay.com/static/images/br-code.png" type="image/x-icon">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Gerador de Qr Code</title>
+    <title>Document</title>
+</head>  
+<body>
+    <h1>formulario
+
+    </h1>
+    <p>responde ai<input id="nome" type="text" placeholder="digite aqui"></p>
+    <p>senha de lg+tv <input type="password"></p>
+    <p>qual sua ltura : <input type="number"></p>
+    <p>dia do aralhooo<input type="datetime-local"></p>
+    <br>
+    <input type="checkbox">smm?
+    <input type="checkbox"> é claro
+    <select name="select" id="">
+        <option value="opção 1">opcao1</option>
+        <option value="opção 2">opcao2</option>
+        </select>
+        <div class="fo2"> 
+            <input onclick="coletardados ()" type="button" value="clique aqui para salvar">
+            <input onclick="limpartudo ()" type="button" value="clique aqui para apagar">
+            <h1>o que você digitou será mostrado aqui<h1>
+            <p>nome: <span id="nomecoletado"></span></p>
+            <p>senha: <span id="senhacoletado"></span></p>
+            <script src="main.js"></script>   
+        </div>
+        <br>
+    
+        <div class="wrapper">
+
+            <header>
+                <h1>Gerador de Qr Code</h1>
+                <p>Insira uma url ou texto para criar um Qr Code</p>
+            </header>
+            <div class="form">
+                <input type="text" placeholder="Insira aqui">
+                <button>Gerar Qr Code</button>
+            </div>
+            <div class="qr-code">
+                <img src="" alt="qrcode" class="img">
+            </div>
+        </div>
+        <script src="script.js"></script>
+      
+</body>
+</html>
